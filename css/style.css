@@ -774,14 +774,16 @@ body.section-show .transition-mask:before {
 	margin-bottom: 20px;
 	float: left;
 	width: 25%;
+	box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .info-list>li>.inner {
 	padding: 15px 0;
+	box-sizing: border-box; /* Ensures padding and border are included in the height */
 }
 
 .info-list>li>* {
-	line-height: 1em;
+	line-height: 1.5em; 
 	margin: 0;
 }
 
@@ -792,10 +794,13 @@ body.section-show .transition-mask:before {
 	margin-bottom: 8px;
 	display: block;
 	color: #333;
+	overflow: hidden; /* Ensures that text does not overflow the container */
+	white-space: nowrap; /* Prevents the text from wrapping to the next line */
+	text-overflow: ellipsis; /* Adds ellipsis (...) if the text overflows */
 }
 
 .info-list>li>.inner>p {
-	font-size: 12px;
+	font-size: 16px;
 	color: #777;
 	display: block;
 }
