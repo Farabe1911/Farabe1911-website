@@ -795,7 +795,7 @@ body.section-show .transition-mask:before {
 }
 
 .info-list>li>.inner>p {
-	font-size: 12px;
+	font-size: 16px;
 	color: #777;
 	display: block;
 }
