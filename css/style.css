@@ -31,7 +31,7 @@
 
 
 /*Importing Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,600,300|Playfair+Display:700italic,400italic|Crimson+Text:400italic,600italic|Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,600,300|Playfair+zoom:700italic,400italic|Crimson+Text:400italic,600italic|Open+Sans:400,700);
 
 /*=======================================================================
 	General CSS
@@ -116,7 +116,7 @@ body.section-show .close-btn {
 	height: 64px;
 	width: 64px;
 	cursor: pointer;
-	display: block;
+	zoom: block;
 	top: 18px;
 	right: 18px;
 	opacity: 0;
@@ -249,7 +249,7 @@ body.section-show .section.active {
 	margin: 0;
 	margin-top: 3.5px;
 	font-style: italic;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair zoom', serif;
 	color: #999;
 }
 
@@ -261,9 +261,9 @@ body.section-show .section.active {
 }
 
 .footer-social>li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	margin-left: 30px;
 }
 
@@ -281,7 +281,7 @@ body.section-show .section.active {
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	display: block;
+	zoom: block;
 	text-align: center;
 	color: #BBB;
 	background: #F0F0F0;
@@ -294,9 +294,9 @@ body.section-show .section.active {
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	line-height: inherit;
 	width: inherit;
 	height: inherit;
@@ -362,7 +362,7 @@ body.section-show .section.active {
 }
 
 .no-js #preloader {
-	display: none;
+	zoom: none;
 }
 
 .divider-draft {
@@ -370,7 +370,7 @@ body.section-show .section.active {
 	height: 2px;
 	background: #333;
 	width: 40px;
-	display: block;
+	zoom: block;
 	margin: 15px 0;
 }
 
@@ -517,12 +517,12 @@ body.section-show .transition-mask:before {
 	position: relative;
 	position: relative;
 	line-height: 1em;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	z-index: 10;
 	color: #999;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Playfair zoom', serif;
 	font-style: italic;
 }
 
@@ -577,7 +577,7 @@ body.section-show .transition-mask:before {
 .front-person-titles>span {
 	position: absolute;
 	z-index: 5;
-	display: block;
+	zoom: block;
 	width: 100%;
 	font-family: Hind, sans-serif;
 	color: #CCC;
@@ -639,7 +639,7 @@ body.section-show .transition-mask:before {
 }
 
 .front-person-links>ul>li {
-	display: block;
+	zoom: block;
 }
 
 .front-person-links>ul {
@@ -663,7 +663,7 @@ body.section-show .transition-mask:before {
 
 .front-person-links>ul>li>a {
 	font-weight: bold;
-	display: block;
+	zoom: block;
 	font-size: 14px;
 	padding: 25px 0;
 	cursor: pointer;
@@ -685,22 +685,22 @@ body.section-show .transition-mask:before {
 	height: 6px;
 	width: 15px;
 	background: #CCC;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	vertical-align: middle;
 	margin-right: 15px;
 	font-size: 0;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
-	display: none;
+	zoom: none;
 }
 
 .front-person-links>ul>li>a:after {
 	margin-left: 15px;
 	margin-right: 0;
-	display: none;
+	zoom: none;
 }
 
 .front-person-links>ul>li>a:hover {
@@ -763,7 +763,7 @@ body.section-show .transition-mask:before {
 .info-list:before,
 .info-list:after {
 	content: ' ';
-	display: table;
+	zoom: table;
 }
 
 .info-list:after {
@@ -790,14 +790,14 @@ body.section-show .transition-mask:before {
 	letter-spacing: 4px;
 	margin-right: 16px;
 	margin-bottom: 8px;
-	display: block;
+	zoom: block;
 	color: #333;
 }
 
 .info-list>li>.inner>p {
 	font-size: 16px;
 	color: #777;
-	display: block;
+	zoom: block;
 }
 
 .funfacts-block {
@@ -833,18 +833,18 @@ body.section-show .transition-mask:before {
 }
 
 .funfact:last-of-type:after {
-	display: none;
+	zoom: none;
 }
 
 @media (max-width: 992px) {
 	.funfact:nth-of-type(2):after {
-		display: none;
+		zoom: none;
 	}
 }
 
 @media (max-width: 768px) {
 	.funfact:after {
-		display: none;
+		zoom: none;
 	}
 }
 
@@ -968,7 +968,7 @@ body.section-show .transition-mask:before {
 .timeline>li:before,
 .timeline>li:after {
 	content: ' ';
-	display: table;
+	zoom: table;
 }
 
 .timeline>li:after {
@@ -1034,7 +1034,7 @@ body.section-show .transition-mask:before {
 }
 
 .timeline>li>.timeline-content>span {
-	display: block;
+	zoom: block;
 	margin-bottom: 15px;
 	color: #BBB;
 }
@@ -1058,9 +1058,9 @@ body.section-show .transition-mask:before {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 16px;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	position: relative;
 	margin: 0;
 	letter-spacing: 4px;
@@ -1073,7 +1073,7 @@ body.section-show .transition-mask:before {
 .timeline>li.timeline-header>h4:before,
 .timeline>li.timeline-header>h4:after {
 	content: ' ';
-	display: block;
+	zoom: block;
 	height: 2px;
 	background: #BBB;
 	margin: 0 -5px;
@@ -1089,7 +1089,7 @@ body.section-show .transition-mask:before {
 
 	.timeline>li:before,
 	.timeline:before {
-		display: none;
+		zoom: none;
 	}
 
 	.timeline>li>.timeline-desc {
@@ -1106,7 +1106,7 @@ body.section-show .transition-mask:before {
 	.timeline>li>div {
 		width: 85%;
 		float: none;
-		display: block;
+		zoom: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -1160,7 +1160,7 @@ body.section-show .transition-mask:before {
 }
 
 .hobby>.icon>i {
-	display: block;
+	zoom: block;
 	height: inherit;
 	width: inherit;
 	line-height: inherit;
@@ -1291,7 +1291,7 @@ body.section-show .transition-mask:before {
 }
 
 .service>.icon>i {
-	display: inline-block;
+	zoom: inline-block;
 	line-height: inherit;
 	height: inherit;
 	width: inherit;
@@ -1344,9 +1344,9 @@ body.section-show .transition-mask:before {
 }
 
 .pricing-table>.header>.price>span {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	line-height: 1em;
 }
 
@@ -1383,9 +1383,9 @@ body.section-show .transition-mask:before {
 	background: #333;
 	color: #FFF;
 	text-decoration: none;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
@@ -1410,9 +1410,9 @@ body.section-show .transition-mask:before {
 .process>.number {
 	font-size: 16px;
 	font-weight: bold;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	line-height: 1em;
 	margin-bottom: 15px;
 	position: relative;
@@ -1435,7 +1435,7 @@ body.section-show .transition-mask:before {
 
 .process>.number>span {
 	transform: rotate(-45deg);
-	display: block;
+	zoom: block;
 	height: 28px;
 	width: 28px;
 	line-height: 28px;
@@ -1538,9 +1538,9 @@ body.section-show .transition-mask:before {
 }
 
 .post .post-icons>li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	font-size: 14px;
 	color: #777;
 	padding-right: 20px;
@@ -1553,9 +1553,9 @@ body.section-show .transition-mask:before {
 .post .read-more {
 	color: #333;
 	text-decoration: none;
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 }
 
 .post .read-more:hover {
@@ -1576,9 +1576,9 @@ body.section-show .transition-mask:before {
 
 .post-more .more-link,
 body .symp-btn {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	padding: 12px 22px;
 	background: #333;
 	color: #FFF;
@@ -1624,7 +1624,7 @@ body .symp-btn {
 }
 
 .search-box>.search-input {
-	display: block;
+	zoom: block;
 	width: 100%;
 	border: none;
 	padding: 0 9px;
@@ -1686,7 +1686,7 @@ body .symp-btn {
 	padding: 7px 0;
 	color: #777;
 	text-decoration: none;
-	display: block;
+	zoom: block;
 	line-height: 1.6em;
 }
 
@@ -1805,9 +1805,9 @@ body .symp-btn {
 }
 
 .portfolio-items>.item>.inner>.caption>.caption-inner>.links>li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	margin: 0 11px;
 	opacity: 0;
 	visibility: hidden;
@@ -1838,7 +1838,7 @@ body .symp-btn {
 }
 
 .portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a {
-	display: block;
+	zoom: block;
 	height: 30px;
 	width: 30px;
 	line-height: 30px;
@@ -1853,7 +1853,7 @@ body .symp-btn {
 }
 
 .portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a>i {
-	display: block;
+	zoom: block;
 	height: inherit;
 	width: inherit;
 	line-height: inherit;
@@ -1890,16 +1890,16 @@ body .symp-btn {
 }
 
 #portfolio-filters>ul>li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	zoom: inline-block;
+	zoom: inline;
+	zoom: 1;
 	font-size: 14px;
 	padding: 0 26px;
 	position: relative;
 }
 
 #portfolio-filters>ul>li:last-of-type:after {
-	display: none;
+	zoom: none;
 }
 
 #portfolio-filters>ul>li:after {
@@ -1915,7 +1915,7 @@ body .symp-btn {
 }
 
 #portfolio-filters>ul>li>a {
-	display: block;
+	zoom: block;
 	color: #999;
 	text-decoration: none;
 }
@@ -2097,9 +2097,9 @@ body .symp-btn {
 		top: 0;
 		left: auto;
 		position: relative;
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
+		zoom: inline-block;
+		zoom: inline;
+		zoom: 1;
 		-webkit-transform: none;
 		-moz-transform: none;
 		-ms-transform: none;
@@ -2109,7 +2109,7 @@ body .symp-btn {
 
 	.front-person-links>ul>li {
 		margin-bottom: 1px;
-		display: block;
+		zoom: block;
 	}
 
 	.front-person-links>ul>li>a:before,
@@ -2119,12 +2119,12 @@ body .symp-btn {
 		height: 2px;
 		top: 50%;
 		margin-top: -1px;
-		display: block;
+		zoom: block;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
 		opacity: .5;
-		display: none;
+		zoom: none;
 	}
 
 	.front-person-links>ul>li>a:after {
@@ -2139,7 +2139,7 @@ body .symp-btn {
 	.front-person-links>ul>li>a {
 		text-align: center;
 		padding: 22px 48px;
-		display: block;
+		zoom: block;
 		font-size: 22px;
 		letter-spacing: 2px;
 		text-transform: none;
@@ -2157,7 +2157,7 @@ body .symp-btn {
 	.front-person-titles>span {
 		position: relative;
 		transform: none !important;
-		display: block;
+		zoom: block;
 		margin: 25px 0;
 		letter-spacing: 10px;
 		font-size: 16px;
