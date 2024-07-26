@@ -438,8 +438,8 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:200px;/*   this was 200*/
-	padding-bottom:200px;
+	padding-top:0px;/*   this was 200*/
+	padding-bottom:0px;
 	position:center;
 }
 .front-heading{
@@ -563,7 +563,7 @@ body.section-show .transition-mask:before{
 	margin:auto;
 	width:520px;
 	height:520px;
-	margin-top:50px;
+	margin-top:-500px;
 	z-index:25;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
