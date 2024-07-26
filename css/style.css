@@ -563,7 +563,7 @@ body.section-show .transition-mask:before{
 	margin:auto;
 	width:520px;
 	height:520px;
-	margin-top:-500px;
+	margin-top:50px;
 	z-index:25;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
