@@ -170,7 +170,7 @@
 						
 						<div class='row' >
 							
-							<div class='col-md-4' >
+						 <div class='col-md-4' >
 								<div class='about-person-img' >
 									
 									 <img src='img/man2.png' alt='symp'>
@@ -2638,7 +2638,25 @@
 			const age = calculateAge(birthDate);
 			document.getElementById('age').textContent = age + ' Years';
 		</script>
-		
+		<style>
+			.about-info {
+				position: center;
+				width: 100%;
+				max-width: 800px; /* Set a max-width if necessary */
+				margin: 0 auto; /* Center the content */
+				padding: 20px;
+				box-sizing: border-box; /* Include padding and border in element's total width and height */
+				border: 1px solid #000;
+			}
+			.container {
+			
+				width: 100%;
+				overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
+				word-wrap: break-word; /* Alternative property for older browsers */
+				word-break: break-word; /* Ensure long words break at arbitrary points */
+				hyphens: auto; /* Enable hyphenation if the browser supports it */
+			}
+			</style>
 		
 	</body>
 	
