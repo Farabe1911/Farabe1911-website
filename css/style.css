@@ -663,6 +663,7 @@ body.section-show .transition-mask:before{
 	
 	
 	width: 100%;
+	
 	overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
 	word-wrap: break-word; /* Alternative property for older browsers */
 	word-break: break-word; /* Ensure long words break at arbitrary points */
