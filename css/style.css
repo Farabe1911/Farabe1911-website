@@ -267,9 +267,10 @@ body.section-show .section.active{
 	background:#B7A389;
 	color:#FFF;
 }
-.section-block > .container,
+.section-block > ,
 .section-block{
 	position:relative;
+	
 }
 .section-block{
 	overflow:hidden;
@@ -284,7 +285,7 @@ body.section-show .section.active{
 	left:0;
 	right:0;
 	bottom:0;
-	background:#FFF;
+	background:#350b0b;
 	z-index:199;
 	-webkit-transition:all .5s ease;
 	-moz-transition:all .5s ease;
@@ -351,9 +352,9 @@ body.section-show .section.active{
 =======================================================================*/
 body.section-show .transition-mask{
 	position:absolute;
-	top:260px;
-	height:500px;
-	width:500px;
+	top:215px;
+	height:480px;
+	width:480px;
 	left:0;
 	right:0;
 	margin:auto;
@@ -373,10 +374,10 @@ body .transition-mask:before{
 	width:100%;
 }
 body.section-show .transition-mask:before{
-	-webkit-animation: fill .4s both ease;
-	-moz-animation: fill .4s both ease;
-	animation: fill .4s both ease;
-	background:#CCC;
+	-webkit-animation: fill .2s both ease;
+	-moz-animation: fill .2s both ease;
+	animation: fill .2s both ease;
+	background:#ffffff;
 }
 
 @-webkit-keyframes fill2{
@@ -437,13 +438,13 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:60px;
-	padding-bottom:200px;
-	position:relative;
+	padding-top:0px;/*   this was 200*/
+	padding-bottom:0px;
+	position:center;
 }
 .front-heading{
 	text-align:center;
-	margin-top:190px;
+	margin-top:110px;
 }
 .front-heading > h2{
 	font-size:55px;
@@ -462,16 +463,16 @@ body.section-show .transition-mask:before{
 }
 
 .front-person-img{
-	width:500px;
-	height:500px;
+	width:480px;
+	height:480px;
 	overflow:hidden;
-	background:#F0F0F0;
+	background:#ffffff;
 	position:relative;
-	z-index:15;
+	z-index:10;
 	-webkit-transition:height .5s .3s ease, transform .5s .8s ease;
 	-moz-transition:height .5s .3s ease, transform .5s .8s ease;
 	transition:height .5s .3s ease, transform .5s .8s ease;
-	margin:200px auto;
+	margin:215px auto;
 	margin-bottom:0;
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
@@ -482,6 +483,9 @@ body.section-show .transition-mask:before{
 }
 .front-person-img > img{
 	max-width:100%;
+	position: relative;
+	top:-120px;
+	left: -50px;
 	vertical-align:bottom;
 	-webkit-transform:rotate(-45deg) translateY(40px);
 	-moz-transform:rotate(-45deg) translateY(40px);
@@ -491,6 +495,7 @@ body.section-show .transition-mask:before{
 }
 
 .front-person-titles{
+
 	position:relative;
 	z-index:10;
 	height:500px;
@@ -504,6 +509,7 @@ body.section-show .transition-mask:before{
 	transform:rotate(45deg);
 }
 .front-person-titles > span{
+	
 	position:absolute;
 	z-index:5;
 	display:block;
@@ -512,11 +518,12 @@ body.section-show .transition-mask:before{
 	color:#CCC;
 	text-align:center;
 	font-size:24px;
-	letter-spacing:25px;
+	letter-spacing:15px;
 	line-height:1em;
 	text-transform:lowercase;
 }
 .front-person-titles > .t1{
+	text-transform: uppercase;
 	left:5px;
 	bottom:0;
 	-webkit-transform:rotate(-90deg) translateY(-100%);
@@ -531,6 +538,7 @@ body.section-show .transition-mask:before{
 	transform-origin:0% 0%;
 }
 .front-person-titles > .t2{
+	text-transform: uppercase;
 	top:5px;
 	left:0;
 	-webkit-transform:translateY(-100%);
@@ -540,8 +548,9 @@ body.section-show .transition-mask:before{
 	transform:translateY(-100%);
 }
 .front-person-titles > .t3{
+	text-transform: uppercase;
 	left:0;
-	bottom:5px;
+	bottom:0px;
 	-webkit-transform:translateY(100%) rotate(180deg);
 	-moz-transform:translateY(100%) rotate(180deg);
 	-ms-transform:translateY(100%) rotate(180deg);
@@ -552,8 +561,8 @@ body.section-show .transition-mask:before{
 
 .front-person-links{
 	margin:auto;
-	width:500px;
-	height:500px;
+	width:520px;
+	height:520px;
 	margin-top:-500px;
 	z-index:25;
 	-webkit-transform: rotate(45deg);
@@ -607,7 +616,7 @@ body.section-show .transition-mask:before{
 	content: ' ';
 	height:6px;
 	width:15px;
-	background:#CCC;
+	background:#bdbdbd;
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
@@ -637,14 +646,41 @@ body.section-show .transition-mask:before{
 /*=======================================================================
 	About Section
 =======================================================================*/
+
+
+.about-info {
+
+	width: 100%;
+	max-width: 900px; /* Set a max-width if necessary */
+	margin: 0 auto; /* Center the content */
+	padding: 20px;
+	box-sizing: border-box; /* Include padding and border in element's total width and height */
+	border: 4px solid #000000;
+	
+
+}
+.container {
+	
+	
+	width: 100%;
+	overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
+	word-wrap: break-word; /* Alternative property for older browsers */
+	word-break: break-word; /* Ensure long words break at arbitrary points */
+	hyphens: auto; /* Enable hyphenation if the browser supports it */
+}
+
+
 .about-section{
+	
 	padding-top:0;
+	padding-left: 50px;
 }
 .about-icons{
 	padding-top:110px;
 	padding-bottom:0px;
 }
 .basic-info{
+	
 	padding-top:100px;
 	padding-bottom:100px;
 	position:relative;
@@ -701,10 +737,12 @@ body.section-show .transition-mask:before{
 	color:#333;
 }
 .info-list > li > .inner > p{
-	font-size:16px;
+	font-size:15px;
 	color:#777;
-	display:block;
+
 }
+
+
 .funfacts-block{
 	padding-top:60px;
 	padding-bottom:20px;
@@ -725,7 +763,7 @@ body.section-show .transition-mask:before{
 	right:-10px;
 	top:50%;
 	margin-top:-10px;
-	border:solid 1px #FFF;
+	border:solid 1px #817171;
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
 	-ms-transform:rotate(45deg);
@@ -1901,7 +1939,7 @@ body .symp-btn{
 		width:65%;
 		padding-top:65%;
 		height:0;
-		margin-top:120px;
+		margin-top:1220px;
 	}
 	.front-person-img > img{
 		-webkit-transform:rotate(-45deg) translateY(45px);
@@ -1913,4 +1951,11 @@ body .symp-btn{
 		bottom:0;
 		left:-40px;
 	}
+
+
+/*=======================================================================
+	About me
+=======================================================================*/
+
+    
 }
