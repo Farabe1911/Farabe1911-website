@@ -103,17 +103,17 @@
 								<a href='#' data-section='resume' >Timeline</a>
 							</li>
 							
-							<li>
+							<!-- <li>
 								<a href='#' data-section='services' >Services</a>
 							</li>
-							
+							 -->
 							<li>
 								<a href='#' data-section='portfolio' >Portfolio</a>
 							</li>
 							
-							<li>
+							<!-- <li>
 								<a href='#' data-section='blog' >My Blog</a>
-							</li>
+							</li> -->
 							
 							<li>
 								<a href='#' data-section='contact' >Contact</a>
@@ -244,8 +244,8 @@
 									</li>
 									<li>
 										<div class='inner' >
-											<h4>Age</h4>
-											<p id="age">0 Years</p> <!-- Initial static value -->
+											<h4>Experience</h4>
+											<p id="experience">0 Years</p> <!-- Initial static value -->
 										</div>
 									</li>
 									<li>
@@ -266,8 +266,11 @@
 									
 								</ul>
 								
-								<a href='#' class='symp-btn' >Hire Me For Work</a>
-								
+								<a href="#" id="hire-me" class="symp-btn">Hire Me For Work</a>
+
+
+								  <!-- Navigation List -->
+ 			
 								<a href="data/Resume.pdf" class='symp-btn link-btn' download><i class='ion-ios-download' ></i>Download Resume</a>
 								
 							</div>
@@ -682,7 +685,8 @@
 									<span>University Of Cambridge</span>
 									
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+										Science
+									
 									</p>
 									
 								</div>
@@ -703,7 +707,7 @@
 									<span>Univeristy Of Cambridge</span>
 									
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+										Science
 									</p>
 									
 								</div>
@@ -730,7 +734,7 @@
 									<span>TELUS International</span>
 									
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+										<!-- work experiences -->
 									</p>
 									
 								</div>
@@ -751,7 +755,7 @@
 									<span>Concentrix</span>
 									
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									<!-- work experience -->
 									</p>
 									
 								</div>
@@ -772,7 +776,7 @@
 									<span>TDP</span>
 									
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									<!-- work experiences -->
 									</p>
 									
 								</div>
@@ -846,7 +850,7 @@
 										<i class='ion-ios-musical-notes' ></i>
 									</div>
 									
-									<h4>Music</h4>
+									<h4>Swimming</h4>
 									
 								</div>
 								
@@ -860,7 +864,7 @@
 										<i class='ion-beer' ></i>
 									</div>
 									
-									<h4>Drinking</h4>
+									<h4>Golf</h4>
 									
 								</div>
 								
@@ -933,7 +937,7 @@
 								
 								<div class='skill' >
 									
-									<h4>HTML/CSS</h4>
+									<h4>Java</h4>
 									
 									<div class='skill-bar' data-percent='90' >
 										<div class='bar' >
@@ -951,7 +955,7 @@
 								
 								<div class='skill' >
 									
-									<h4>VB</h4>
+									<h4>Laravel</h4>
 									
 									<div class='skill-bar' data-percent='90' >
 										<div class='bar' >
@@ -963,7 +967,7 @@
 								
 								<div class='skill' >
 									
-									<h4>Wordpress</h4>
+									<h4>JavaScript</h4>
 									
 									<div class='skill-bar' data-percent='85' >
 										<div class='bar' >
@@ -1004,7 +1008,7 @@
 						<div class='row' >
 							
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Tasnimul Farabe</h4>
 							</div>
 							
 							<div class='col-xs-6 text-right' >
@@ -2621,24 +2625,7 @@
 		<script src='js/validator.min.js' ></script>
 		<script src='js/smoothscroll.js' ></script>
 		<script src='js/script.js' ></script>
-		<script>
-			function calculateAge(birthDate) {
-				const today = new Date();
-				const birthDateObj = new Date(birthDate);
-				let age = today.getFullYear() - birthDateObj.getFullYear();
-				const monthDifference = today.getMonth() - birthDateObj.getMonth();
-				if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
-					age--;
-				}
-				return age;
-			}
-	
-			const birthDate = '1997-10-08'; // Change this to your birth date (YYYY-MM-DD)
-			const age = calculateAge(birthDate);
-			document.getElementById('age').textContent = age + ' Years';
-		</script>
-		
-		
+
 	</body>
 	
 </html>

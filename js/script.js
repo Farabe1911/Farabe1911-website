@@ -46,26 +46,65 @@ $(function(){
 	/*=========================================================================
 		Links Navigation System
 	=========================================================================*/
-	$('.front-person-links > ul > li > a[data-section]').on('click', function(e){
-		e.preventDefault();
-		var section = $('#' + $(this).data('section'));
-		
-		if( section.size() != 0 ){
-			
-			$('body').addClass('section-show');
-			
-			section.addClass('active');
-		
+
+	
+	$(document).ready(function() {
+		// Handle clicks on navigation links
+		$('.front-person-links > ul > li > a[data-section]').on('click', function(e) {
+			e.preventDefault(); // Prevent default anchor behavior
+			var section = $('#' + $(this).data('section')); // Find the section using the data-section attribute
+	
+			if (section.length != 0) { // Check if the section exists
+				$('body').addClass('section-show'); // Show the section
+				section.addClass('active'); // Add 'active' class to the section
+			}
+		});
+	
+		// Handle clicks on the "Hire Me For Work" button
+		$('#hire-me').on('click', function(e) {
+			e.preventDefault(); // Prevent default anchor behavior
+			var section = $('#contact'); // Target the Contact section
+	
+			if (section.length != 0) { // Check if the section exists
+				$('body').addClass('section-show'); // Show the section
+				section.addClass('active'); // Add 'active' class to the section
+			}
+		});
+	
+		// Handle clicks on the close button
+		$('.close-btn').on('click', function() {
+			$('body').removeClass('section-show'); // Hide the section
+			$('section.active').removeClass('active'); // Remove 'active' class from the section
+		});
+	});
+	
+
+	/*=========================================================================
+		Calculate experience
+	=========================================================================*/
+
+
+	function calculateExperience(startDate) {
+		const today = new Date();
+		const startDateObj = new Date(startDate);
+		let experience = today.getFullYear() - startDateObj.getFullYear();
+		const monthDifference = today.getMonth() - startDateObj.getMonth();
+		if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < startDateObj.getDate())) {
+			experience--;
 		}
-		
-	});
-	$('.close-btn').on('click', function(){
-		$('body').removeClass('section-show');
-		$('section.active').removeClass('active');
-	});
-	
-	
-	
+		return experience;
+	}
+
+	const startDate = '2018-10-08'; // Change this to your birth date (YYYY-MM-DD)
+	const experience = calculateExperience(startDate);
+	document.getElementById('experience').textContent = experience + ' Years';
+
+
+
+
+
+
+
 	/*=========================================================================
 		Testimonials Slider
 	=========================================================================*/

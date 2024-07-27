@@ -438,26 +438,24 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:1px;/*   this was 200*/
+	padding-top:0px;/*   this was 200*/
 	padding-bottom:200px;
 	position:relative;
 }
 .front-heading{
 	text-align:center;
-	margin-top:110px;
+	margin-top:auto;
 }
 .front-heading > h2{
-	font-size:55px;
+	font-size:65px;
 	font-weight:lighter;
 	letter-spacing:15px;
-	position:relative;
-	position:relative;
-	line-height:1em;
+	
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
 	z-index:10;
-	color:#999;
+	color:#836d6d;
 	font-family: 'Playfair Display', serif;
 	font-style:italic;
 }
@@ -561,8 +559,8 @@ body.section-show .transition-mask:before{
 
 .front-person-links{
 	margin:auto;
-	width:520px;
-	height:520px;
+	width:450px;
+	height:620px;
 	margin-top:-500px;
 	z-index:25;
 	-webkit-transform: rotate(45deg);
