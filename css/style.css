@@ -36,8 +36,6 @@
 /*=======================================================================
 	General CSS
 =======================================================================*/
-
-
 *{
 	margin:0;
 	padding:0;
@@ -353,7 +351,7 @@ body.section-show .section.active{
 	Front Section
 =======================================================================*/
 body.section-show .transition-mask{
-	position:relative;
+	position:absolute;
 	top:215px;
 	height:480px;
 	width:480px;
@@ -440,9 +438,9 @@ body.section-show .transition-mask:before{
 
 
 .front-section{
-	padding-top:0px;/*   this was 200*/
-	padding-bottom:0px;
-	position:center;
+	padding-top:1px;/*   this was 200*/
+	padding-bottom:200px;
+	position:relative;
 }
 .front-heading{
 	text-align:center;
@@ -646,39 +644,21 @@ body.section-show .transition-mask:before{
 
 
 /*=======================================================================
-	Resume Section
+	About Section
 =======================================================================*/
 .about-info {
-	
-	
-	
-	width: 100%;
-	max-width: 900px; /* Set a max-width if necessary */
 
-	padding: 40px;
+	width: 103%;
+	padding: 20px;
 	box-sizing: border-box; /* Include padding and border in element's total width and height */
-	border: 1px solid #000;
-
+	border: 4px solid #000;
 }
-.container {
-
-	width: 100%;
-	
-	align-items: center;
-	justify-content: center;
-	overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
-	word-wrap: break-word; /* Alternative property for older browsers */
-	word-break: break-word; /* Ensure long words break at arbitrary points */
-	hyphens: auto; /* Enable hyphenation if the browser supports it */
-}
-
 
 
 .about-section{
-	position: center;
-	margin: auto; /* Center the content */
+	
 	padding-top:0;
-	padding-left: 50px;
+	
 
 }
 .about-icons{
@@ -1828,11 +1808,11 @@ body .symp-btn{
 /*=======================================================================
 	Responsive CSS
 =======================================================================*/
-@media (max-width:592px){
-	 .about-person-img{
+@media (max-width:992px){
+	/* .about-person-img{
 		margin-bottom:40px;
 		text-align:center;
-	} 
+	} */
 	.info-list > li{
 		width:50%;
 	}
@@ -1845,11 +1825,8 @@ body .symp-btn{
 	.front-person-img{
 		height:360px;
 		width:360px;
-		
 	}
 	.front-person-img > img{
-	
-		left: -63px;
 		-webkit-transform:rotate(-45deg) translateY(45px);
 		-moz-transform:rotate(-45deg) translateY(45px);
 		-ms-transform:rotate(-45deg) translateY(45px);
@@ -1940,19 +1917,16 @@ body .symp-btn{
 		margin-top:80px;
 	}
 }
-
-
-/* @media (max-width:768px){
+ @media (max-width:460px){
 	
 	.front-person-links{
 		margin-top:65px;
 	}
 	.front-person-img{
-		
-		width:45%;
-		padding-top:45%;
+		width:65%;
+		padding-top:65%;
 		height:0;
-		margin-top:auto;
+		margin-top:120px;
 	}
 	.front-person-img > img{
 		-webkit-transform:rotate(-45deg) translateY(45px);
@@ -1962,12 +1936,9 @@ body .symp-btn{
 		transform:rotate(-45deg) translateY(100px);
 		position:absolute;
 		bottom:0;
-		left:-40px;
-	} */
+		left:-80px;
+	} 
 
 
-/*=======================================================================
-	About me
-=======================================================================*/
-
-
+    
+}
