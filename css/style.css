@@ -287,9 +287,9 @@ body.section-show .section.active{
 	bottom:0;
 	background:#ffffff;
 	z-index:199;
-	-webkit-transition:all .5s ease;
-	-moz-transition:all .5s ease;
-	transition:all .5s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	transition:all 5s ease;
 }
 .js #preloader .loader{
 	position:absolute;
@@ -302,11 +302,11 @@ body.section-show .section.active{
 	transform:translate(-50%, -50%);	
 }
 .js body.loaded #preloader{
-	-webkit-transform:scale(.6) translateY(-100%);
-	-moz-transform:scale(.6) translateY(-100%);
-	-ms-transform:scale(.6) translateY(-100%);
-	-o-transform:scale(.6) translateY(-100%);
-	transform:scale(.6) translateY(-100%);
+	-webkit-transform:scale(2) translateY(-100%);
+	-moz-transform:scale(2) translateY(-100%);
+	-ms-transform:scale(2) translateY(-100%);
+	-o-transform:scale(2) translateY(-100%);
+	transform:scale(2) translateY(-100%);
 	opacity:0;
 	visibility:hidden;
 	z-index:-1;
