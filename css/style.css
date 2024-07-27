@@ -486,7 +486,7 @@ body.section-show .transition-mask:before{
 	position: relative;
 	top:-120px;
 	left: -50px;
-	vertical-align:bottom;
+	
 	-webkit-transform:rotate(-45deg) translateY(40px);
 	-moz-transform:rotate(-45deg) translateY(40px);
 	-ms-transform:rotate(-45deg) translateY(40px);
@@ -846,7 +846,7 @@ body.section-show .transition-mask:before{
 	opacity:1;
 }
 /*=======================================================================
-	Resume Section
+	Timeline Section
 =======================================================================*/
 
 .timeline-block{
