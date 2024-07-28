@@ -1425,8 +1425,8 @@ body.section-show .transition-mask:before{
 		font-size:50px;
 	}
 	.front-person-img{
-		height:360px;
-		width:360px;
+		height:375px;
+		width:395px;
 	}
 	.front-person-img > img{
 		-webkit-transform:rotate(-45deg) translateY(45px);
