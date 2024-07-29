@@ -289,7 +289,7 @@ body.section-show .section.active{
 	z-index:199;
 	-webkit-transition:all 2s ease;
 	-moz-transition:all 2s ease;
-	transition:all 5s ease;
+	transition:all 4s ease;
 }
 .js #preloader .loader{
 	position:absolute;
