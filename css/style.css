@@ -653,6 +653,81 @@ body.section-show .transition-mask:before{
 }
 
 
+/*=========================================================================
+		Hire me & Download button
+	=========================================================================*/
+
+#hire-me {
+	display: inline-block;
+    background: linear-gradient(135deg, #ff0000, #2600ff); /* Gradient background */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+	text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#hire-me:hover {
+    background: linear-gradient(135deg, #ff4b2b, #91001f); /* Reversed gradient on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+#hire-me:active {
+    transform: translateY(1px); /* Pressed down effect */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Less shadow on click */
+}
+
+#hire-me i {
+    margin-right: 8px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+#download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #00ccff, #00ff0d); /* Gradient background */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#download-btn:hover {
+    background: linear-gradient(135deg, #1100ff, #4400ff); /* Reversed gradient on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+#download-btn:active {
+    transform: translateY(1px); /* Pressed down effect */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Less shadow on click */
+}
+
+#download-btn i {
+    margin-right: 8px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+/*=========================================================================
+		Hire me & Download button
+	=========================================================================*/
+
+
 .about-section{
 	
 	padding-top:0;

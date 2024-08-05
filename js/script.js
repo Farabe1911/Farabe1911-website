@@ -25,7 +25,7 @@ $(function(){
 		$('#portfolio-filters > ul > li > a').on('click', function (e) {
 			e.preventDefault();
 			var groupName = $(this).attr('data-group');
-			$('#portfolio-filters > ul > li > a').removeClass('active');
+			$('#portfolio-filters > ul > li > a[data-section]').removeClass('active');
 			$(this).addClass('active');
 			grid.shuffle('shuffle', groupName );
 		});
